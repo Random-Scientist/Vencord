@@ -203,8 +203,9 @@ const jsonOverride = (propertyName, overrideValue) => {
     });
 };
 // Removes ads metadata from YouTube XHR requests
-jsonOverride("adPlacements", []);
 jsonOverride("playerAds", []);
+jsonOverride("adPlacements", []);
+jsonOverride("adSlots", []);
 // Applies CSS that hides YouTube ad elements
 hideElements();
 // Some changes should be re-evaluated on every page change
